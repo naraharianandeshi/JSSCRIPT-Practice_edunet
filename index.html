@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <script>
-        // a= 20
-        // document.write(a)
-        // console.log(a)
-        // b= undefined
-        // console.log(b)
+        a= 20
+        document.write(a)
+        console.log(a)
+        b= undefined
+        console.log(b)
 
         var a = [23, 56, 12, 45];
         console.log(a[3] + a[1])
@@ -23,6 +23,39 @@
         console.log(c.name,c.email,c.address,c.age,c.rollno,c.department)
         console.log(c)
 
+        // <-----ES5---->
+            // declaration
+            function mic() {
+                // scope
+                let a=prompt ("Enter the name")
+                let b=prompt ("Enter the age")
+                document.write(a,b)
+            }
+            mic() // invocation
+
+        // <------ES6---->
+             // declaration
+             const add = () => {
+            // scope
+                let a = Number(prompt("Enter a"))
+                let b= Number(prompt("Enter b")) 
+                let c = Number(prompt("Enter c")) 
+                alert(a+b+c,) 
+                document.write(a,b,c)
+            }
+              add() //invocation
+
+
+         // <----ES7---->
+            // delcaration
+            let a = Number(prompt("Enter a")) 
+            let b = Number(prompt("Enter b")) 
+            const calculate = () => alert(a+b/2)
+            //scope
+            calculate() //invocation
+        
+
+    
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
